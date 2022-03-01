@@ -203,7 +203,7 @@ main button.button .main {
   font-size: 1.31em;
 }
 .feature .desc .content {
-  line-height: 1.7;
+  line-height: 1.65;
   font-size: 0.97em;
   color: #2f2f2f;
 }
@@ -215,6 +215,9 @@ main button.button .main {
 #faq {
   padding-top: 4em;
   background-color: #fffcf9;
+}
+.faq_content .column {
+  width: 50%;
 }
 .section_title {
   margin-bottom: 2.3em;
@@ -279,6 +282,10 @@ footer {
   width: 100%;
   text-align: center;
   color: #8e8e8e;
+}
+.para {
+  display: inline-block;
+  margin-top: 0.3em;
 }
 
 

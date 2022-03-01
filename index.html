@@ -91,7 +91,8 @@
         </div>
         <div class="desc" style="padding: 0 0 0 3em;">
           <div class="title">遅延による順番制御とウィンドウの指定</div>
-          <div class="content">エクスプローラーのように同じアプリケーションで複数ウィンドウがある場合でも、間に遅延を挟むことでタスクバー内での順番を制御できます。ウィンドウの最大化/最小化の指定も可能です。</div>
+          <div class="content">エクスプローラーのように同じアプリケーションで複数ウィンドウがある場合でも、間に遅延を挟むことでタスクバー内での順番を制御できます。ウィンドウの最大化/最小化の指定も可能です。<br>
+          <span class="para">独自の実装により、例えば LINE<span style="font-size: 0.3em;">®</span> のように起動中にウィンドウ操作ができないアプリケーションでも最大化/最小化を自動化できます。</span></div>
         </div>
       </div>
       <div class="feature">
@@ -122,23 +123,28 @@
             <div class="answer">間に遅延がないと動作が速すぎるために順番が保証されなくなります。最低でも１秒の遅延を挿入してください。</div>
           </div>
           <div class="item">
-            <div class="question">ファイルのパスってどうやって調べればいいの？</div>
-            <div class="answer">Windows 10 まででは、パスを調べたいファイルやフォルダを [Shift] キーを押しながら右クリックすることで [パスのコピー] が可能です。<br>
-            Windows 11 からは通常の右クリックのみで [パスのコピー] が表示されるようになりました。<br>
-            <span style="color: #7d7d7d; font-size: 0.83em; line-height: 1.4; display: inline-block; margin-top: 0.5em;">※これによりコピーされたパスは " (引用符) で囲まれたものになりますが、そのままペーストして問題ありません。「ぜんぶひらく」が自動で取り除きます。</span></div>
-          </div>
-        </div>
-        <div class="column">
-          <div class="item">
             <div class="question">ウィンドウの最大化/最小化の指定が効かないんだけど？</div>
             <div class="answer">ウィンドウのモード指定は様々な要因により 100% の動作保証ができません。特に下記の状況については現在サポート対象外となっています。<br>
-            　・１つのプロセスでマルチウィンドウが可能なアプリケーション（エクスプローラーなど）
+            　・１つのプロセスでマルチウィンドウが可能なアプリケーション(エクスプローラーなど)
             </div>
           </div>
           <div class="item">
             <div class="question">インストーラー版とポータブル版で機能に違いはある？</div>
-            <div class="answer">ありません。<br>
-            インストーラー版は 64bit/32bit どちらにも自動で対応します。</div>
+            <div class="answer">ありません。インストーラー版は 64bit/32bit どちらにも自動で対応します。</div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="item">
+            <div class="question">ファイルのパスってどうやって調べればいいの？</div>
+            <div class="answer">Windows 10 まででは、パスを調べたいファイルやフォルダを [Shift] キーを押しながら右クリックすることで [パスのコピー] が可能です。<br>
+            <span class="para">Windows 11 からは通常の右クリックのみで [パスのコピー] が表示されるようになりました。</span><br>
+            <span style="color: #7d7d7d; font-size: 0.83em; line-height: 1.4; display: inline-block; margin-top: 0.555em;">※これによりコピーされたパスは " (引用符) で囲まれたものになりますが、そのままペーストして問題ありません。「ぜんぶひらく」が自動で取り除きます。</span></div>
+          </div>
+          <div class="item">
+            <div class="question">設定している遅延時間よりも多く待たれている気がするんだけど？</div>
+            <div class="answer">Version 2 からは、各ウィンドウが制御可能な状態になるまである程度自動で待つ仕様になりました。<br>
+            <span class="para">そのため遅延時間を設定することの意味は、そのほとんどが順番制御やマシン負荷低減を目的としたものになるということです。</span><br>
+            <span class="para">しかし何が起こるかは依然として未知である以上、比較的余裕を持った値に設定することをおすすめします。</span></div>
           </div>
         </div>
       </div>
