@@ -152,6 +152,7 @@ main button.button:hover .arch {
 }
 main button.button .main {
   margin: auto 0.7em;
+  font-weight: bold;
 }
 .arch {
   padding: 0.3em 0.5em;
