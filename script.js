@@ -1,13 +1,16 @@
 document.getElementById("download_installer").addEventListener("click", () => {
-  createDownloadLink("installer")
+  alert("今はサービス停止中です (´｡･ڡ･｡`)")
+  // createDownloadLink("installer")
 })
 
 document.getElementById("download_portable_x64").addEventListener("click", () => {
-  createDownloadLink("portable_x64")
+  alert("今はサービス停止中です (´｡･ڡ･｡`)")
+  // createDownloadLink("portable_x64")
 })
 
 document.getElementById("download_portable_x86").addEventListener("click", () => {
-  createDownloadLink("portable_x86")
+  alert("今はサービス停止中です (´｡･ڡ･｡`)")
+  // createDownloadLink("portable_x86")
 })
 
 function createDownloadLink(type) {
